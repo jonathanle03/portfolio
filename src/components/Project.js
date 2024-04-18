@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const Project = ({ name, image }) => {
+const Project = ({ name, image, website, github }) => {
   return (
-    <div>
-      <Image src={image} />
-      <div>{name}</div>
+    <div className="flex flex-col">
+      <Image src={image} alt={name} />
+      <div className="flex justify-center w-full">{name}</div>
     </div>
   );
 };
