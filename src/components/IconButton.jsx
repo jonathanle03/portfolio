@@ -2,9 +2,13 @@ import Link from "next/link";
 
 const IconButton = (icon, link) => {
   return (
-    <Link className="" href={link}>
-      {icon}
-    </Link>
+    <>
+      {typeof link == "string" &&
+        <Link className="" href={link}>
+          {icon}
+        </Link>
+      }
+    </>
   );
 };
 
